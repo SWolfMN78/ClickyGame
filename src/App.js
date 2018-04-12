@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Bootstrap from "./components/Bootstrap";
-import Panel from "./components/Panel";
+import NavBar from "./components/Bootstrap/Navbar";
+import Panel from "./components/Bootstrap/Panel"
 import Wrapper from  "./components/Wrapper";
 import Rules from "./components/Rules"
 import HanziCard from "./components/HanziCard";
@@ -10,7 +10,7 @@ import "./App.css";
 class App extends Component {
   //Set the information from the Hanzi.json information to be the default info in an array.
   state = {
-    Hanzi
+    hanzi
   };
 
   //Set up a object to handle flipping
@@ -21,10 +21,10 @@ class App extends Component {
 
   //Set up the layout of the page
   render() {
-    return (
-    // <Navbar/>
-    // <Panel/>
-    <Wrapper>
+    return [
+    <NavBar/>,
+    <Panel/>,
+    <Wrapper>,
       <Rules> Place holder information will be pladed here</Rules>
       {this.state.hanzi.map(hanzi => (
         <HanziCard
@@ -38,7 +38,7 @@ class App extends Component {
         />
       ))}
     </Wrapper>
-    );
+    ];
   }
 }
 

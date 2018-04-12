@@ -7,17 +7,18 @@ const Navbar = () => (
     type="button" data-toggle="collapse" 
     data-target="#navbarColor02" aria-controls="navbarColor02" 
     aria-expanded="false" aria-label="Toggle navigation" 
-    style="">
+    style={{}}>
     <span class="navbar-toggler-icon"></span>
     </button>
 
   <h1 class="text-center">Chinese Clicker</h1>
 
   <div class="collapse navbar-collapse" id="navbarColor02">
+    <p>Your Score:</p><p id="iCurrentScore">00</p>
     <input class="form-control" id="disabledInput iCurrentScore" type="text" placeholder="00" disabled="">
-    Your Score:</input>
-    <input class="form-control" id="disabledInput iTopScore" type="text" placeholder="00" disabled="">
-    High Score:</input>    
+    </input>
+    {/* <input class="form-control" id="disabledInput iTopScore" type="text" placeholder="00" disabled="">
+    High Score:</input>     */}
   </div>
 </nav>
 
