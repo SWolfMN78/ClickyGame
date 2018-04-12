@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => (
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="#">Restart</a>
   <button class="navbar-toggler" 
     type="button" data-toggle="collapse" 
     data-target="#navbarColor02" aria-controls="navbarColor02" 
@@ -10,23 +10,14 @@ const Navbar = () => (
     style="">
     <span class="navbar-toggler-icon"></span>
     </button>
+
+  <h1 class="text-center">Chinese Clicker</h1>
+
   <div class="collapse navbar-collapse" id="navbarColor02">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-    </ul>
-    <input class="form-control" id="disabledInput iCurrentScore" type="text" placeholder="00" disabled=""/>
-    <input class="form-control" id="disabledInput iTopScore" type="text" placeholder="00" disabled=""/>    
+    <input class="form-control" id="disabledInput iCurrentScore" type="text" placeholder="00" disabled="">
+    Your Score:</input>
+    <input class="form-control" id="disabledInput iTopScore" type="text" placeholder="00" disabled="">
+    High Score:</input>    
   </div>
 </nav>
 
