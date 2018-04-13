@@ -1,1 +1,1 @@
-export { default } from "./HanziCard.css";
+export { default } from './HanziCard.css';
